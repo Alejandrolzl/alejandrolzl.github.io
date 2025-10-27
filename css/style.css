@@ -4311,3 +4311,4 @@ button.pswp__button.bringer-pswp-next::after {
 [data-appear="zoom-out-down-right"] {
     transform: translate(calc(-1 * var(--stea-move)), calc(-1 * var(--stea-move))) scale(var(--stea-zoom-out));
 }
+

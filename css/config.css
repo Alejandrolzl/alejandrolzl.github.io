@@ -8,13 +8,13 @@
 =============== */
 :root {
     /* Used as body background and overlays */
-    --bringer-s-body-bg: #07090D;
+    --bringer-s-body-bg: #032434;
 
     /* Used as a background color for header, footer, and mobile navigation */
-    --bringer-s-nav: #07090DCC;
+    --bringer-s-nav: #052736;
 
     /* Used as a background color for block containers, sub-menus, and form inputs */
-    --bringer-s-container-bg: #1A1D24;
+    --bringer-s-container-bg: #335467;
 
     /* The same as the previous one but with transparency for frosted glass blocks */
     --bringer-s-container-frosted: #1A1D24EE;
@@ -29,13 +29,13 @@
     --bringer-s-text: #C5C7CE;
 
     /* A background color for accents, like buttons, highlighted blocks, etc. */
-    --bringer-s-accent: #3F6EE9;
+    --bringer-s-accent: #075C80;
 
     /* A hovered button background color */
-    --bringer-button-hover-bg: #3F6EE9D0;
+    --bringer-button-hover-bg: #05445F;
 
     /* Used as a color for text accents */
-    --bringer-s-text-accent: #5C9DFF;
+    --bringer-s-text-accent: #075C80;
 
     /* Used as a text color for accented blocks */
     --bringer-s-accented-text: var(--bringer-s-heading);
