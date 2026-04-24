@@ -738,10 +738,25 @@ function Page({ which }) {
   }, []);
 
   useEffect(() => {
-    // Registrar TODAS las secciones como reveal-ables (no solo las de abajo del pliegue).
-    // Las que ya están en viewport al cargar se activan inmediatamente; el resto espera al scroll.
+    // Solo animar secciones que NO están visibles al cargar.
+    // Las que ya están en viewport se muestran directamente (sin opacity:0 inicial).
+    // Esto evita el bug donde en mobile una sección grande se quedaba invisible
+    // hasta que el IntersectionObserver disparara tarde.
     const sections = document.querySelectorAll(".section");
-    sections.forEach((el) => el.classList.add("reveal"));
+    const vh = window.innerHeight || 800;
+    const toAnimate = [];
+
+    sections.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top > vh * 0.7) {
+        // Sección por debajo del viewport → animar al entrar
+        el.classList.add("reveal");
+        toAnimate.push(el);
+      }
+      // Sección ya visible → queda tal cual (sin .reveal, sin opacity:0)
+    });
+
+    if (toAnimate.length === 0) return;
 
     const io = new IntersectionObserver(
       (entries) => entries.forEach((e) => {
@@ -753,7 +768,7 @@ function Page({ which }) {
       { threshold: 0.08, rootMargin: "0px 0px -8% 0px" }
     );
 
-    sections.forEach((el) => io.observe(el));
+    toAnimate.forEach((el) => io.observe(el));
     return () => io.disconnect();
   }, [which]);
 
