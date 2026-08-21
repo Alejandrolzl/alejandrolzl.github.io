@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Librería de componentes y tokens"><rect width="400" height="300" fill="#efece6"/>
+<rect x="52" y="46" width="216" height="180" rx="14" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<circle cx="80" cy="76" r="11" fill="#3B82F6"/>
+<circle cx="110" cy="76" r="11" fill="#0a0a0a"/>
+<circle cx="140" cy="76" r="11" fill="#efece6" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="68" y="104" width="76" height="26" rx="13" fill="#3B82F6"/>
+<rect x="82" y="115" width="48" height="4" rx="2" fill="#f7f5f1"/>
+<rect x="154" y="104" width="76" height="26" rx="13" fill="none" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="168" y="115" width="48" height="4" rx="2" fill="#0a0a0a"/>
+<rect x="68" y="146" width="162" height="26" rx="8" fill="none" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="80" y="156" width="70" height="6" rx="3" fill="#0a0a0a" opacity="0.18"/>
+<rect x="68" y="188" width="38" height="18" rx="9" fill="none" stroke="#0a0a0a" stroke-width="2"/>
+<circle cx="97" cy="197" r="6" fill="#3B82F6"/>
+<rect x="252" y="140" width="112" height="76" rx="12" fill="#3B82F6"/>
+<rect x="244" y="132" width="112" height="76" rx="12" fill="#0a0a0a"/>
+<rect x="236" y="124" width="112" height="76" rx="12" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="252" y="140" width="52" height="8" rx="4" fill="#0a0a0a"/>
+<rect x="252" y="158" width="80" height="6" rx="3" fill="#0a0a0a" opacity="0.18"/>
+<rect x="252" y="172" width="64" height="6" rx="3" fill="#0a0a0a" opacity="0.18"/>
+<path d="M330 60 h14 M337 53 v14" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"/>
+<circle cx="332" cy="92" r="5" fill="#3B82F6"/>
+</svg>

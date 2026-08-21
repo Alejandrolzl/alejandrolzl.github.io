@@ -159,7 +159,7 @@ function ContactStrip() {
             <h2 className="cta-strip__head">Experiencias digitales <em>centradas en resultados.</em></h2>
           </div>
           <div className="cta-strip__side">
-            <p>Cuéntame tu brief, tu producto o tu reto. Disponible para roles remotos y colaboraciones freelance.</p>
+            <p>Cuéntame tu brief, tu producto o tu reto. Disponible para colaboraciones freelance y vacantes de tiempo completo 100% home office.</p>
             <div className="btns">
               <a className="btn btn--primary" href={window.SiteMeta.whatsapp} target="_blank" rel="noopener noreferrer">Escríbeme por WhatsApp <span className="arr" aria-hidden="true">↗</span></a>
               <a className="btn btn--ghost" href="contacto.html">Hablemos <span className="arr" aria-hidden="true">↗</span></a>
@@ -184,7 +184,7 @@ function Footer() {
             <a href="recomendaciones.html">Recomendaciones</a>
             <a href="contacto.html">Contacto</a>
           </div>
-          <span>v2026.04</span>
+          <span>v2026.08</span>
         </div>
       </div>
     </footer>
@@ -195,12 +195,17 @@ function Marquee() {
   const phrase = (
     <>
       <span>Diseño de producto</span><span className="star">★</span>
+      <span>UX/UI</span><span className="star">★</span>
       <span>Sistemas de diseño</span><span className="star">★</span>
+      <span>Diseño asistido por IA</span><span className="star">★</span>
       <span>Investigación UX</span><span className="star">★</span>
       <span>Prototipado</span><span className="star">★</span>
+      <span>Accesibilidad WCAG</span><span className="star">★</span>
       <span>Maquetado frontend</span><span className="star">★</span>
-      <span>Fintech · SaaS · B2B</span><span className="star">★</span>
-      <span>Handoff desarrollo</span><span className="star">★</span>
+      <span>Código → Figma</span><span className="star">★</span>
+      <span>Branding digital</span><span className="star">★</span>
+      <span>Handoff a desarrollo</span><span className="star">★</span>
+      <span>Web · Mobile · SaaS</span><span className="star">★</span>
     </>
   );
   return (
@@ -213,9 +218,9 @@ function Marquee() {
   );
 }
 
-function SectionHead({ kicker, title, em, aside }) {
+function SectionHead({ kicker, title, em, aside, noline }) {
   return (
-    <div className="section__head">
+    <div className={"section__head" + (noline ? " section__head--noline" : "")}>
       <div>
         <div className="mono">{kicker}</div>
         <h2 className="section__title">{title} <em>{em}</em></h2>
@@ -312,7 +317,7 @@ function FeaturedWork() {
           kicker="02 — Selección destacada"
           title="Proyectos"
           em="recientes."
-          aside={{ label: "Categorías", text: "Fintech · SaaS · Móvil · Design systems · Web B2B" }}
+          aside={{ label: "Categorías", text: "Fintech · SOFIPO · Medios de pago · Facturación electrónica · SaaS · B2B · Plataformas empresariales · E-commerce · POS · Apps móviles · Vehículos eléctricos · Big Data · Logística · Hostelería · Educación · Gobierno · Startups · Design systems · Branding · Web corporativa" }}
         />
         <div className="work-grid">
           {items.map((w, i) => (
@@ -366,14 +371,14 @@ function About() {
           kicker="03 — Sobre mí"
           title="Valor para el negocio,"
           em="fluidez para el usuario."
-          aside={{ label: "Enfoque", text: "Sistemas de diseño, accesibilidad y handoff limpio para producto." }}
+          aside={{ label: "Enfoque", text: "Producto de extremo a extremo, colaboración multidisciplinaria e IA en cada etapa." }}
         />
         <div className="about">
           <div className="about__card">
-            <div className="about__quote"><em>{d.quote}</em> {d.p}</div>
+            <div className="about__quote">{d.p}</div>
             <div className="about__meta">
               <div className="left">Alejandro López · UX/UI</div>
-              <div className="right">5 AÑOS · DESDE 2019</div>
+              <div className="right">6 AÑOS · DESDE 2020</div>
             </div>
           </div>
           <div className="about__image">
@@ -393,14 +398,14 @@ function Skills() {
           kicker="04 — Capacidades"
           title="Qué hago,"
           em="y cómo."
-          aside={{ label: "Disciplinas", text: "Cuatro especialidades que se integran en cada entrega." }}
+          aside={{ label: "Disciplinas", text: "Ocho especialidades que se integran en cada entrega." }}
         />
         <div className="skills">
           {window.HomeData.skills.map((s, i) => (
             <div className="skill" key={i}>
               <div className="skill__img"><img src={s.img} alt={`Ejemplo de ${s.title}`} loading="lazy" decoding="async" /></div>
               <div className="skill__body">
-                <div className="skill__num">{s.num} / 04</div>
+                <div className="skill__num">{s.num} / 0{window.HomeData.skills.length}</div>
                 <h3 className="skill__title">{s.title}</h3>
                 <p className="skill__desc">{s.desc}</p>
               </div>
@@ -420,7 +425,7 @@ function Behance() {
         <div className="behance">
           <div className="behance__head">
             <div>
-              <div className="mono" style={{ color: "rgba(255,255,255,0.6)" }}>05 — En vivo</div>
+              <div className="mono" style={{ color: "rgba(255,255,255,0.6)" }}>06 — En vivo</div>
               <h2>También en <em>Behance.</em></h2>
             </div>
             <span className="behance__badge"><span className="be">Bē</span>@{b.profile}</span>
@@ -443,7 +448,7 @@ function Behance() {
             ))}
           </div>
           <div className="behance__foot">
-            <div className="stamp">★ Datos en vivo desde behance.net/{b.profile}</div>
+            <div className="stamp">★ Perfil activo en behance.net/{b.profile}</div>
             <a className="big" href={b.url} target="_blank" rel="noopener noreferrer">Ver perfil completo <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -457,14 +462,14 @@ function Clients() {
     <section className="section">
       <div className="wrap">
         <SectionHead
-          kicker="06 — Clientes y equipos"
+          kicker="07 — Clientes y equipos"
           title="Con quién he"
           em="colaborado."
-          aside={{ label: "10 marcas", text: "Fintech, big data, medios de pago, gobierno, educación, hostelería, agencias, startups y HR tech." }}
+          aside={{ label: "12 marcas", text: "Fintech, SOFIPO, big data, medios de pago, vehículos eléctricos, gobierno, educación, salud, hostelería, agencias, startups y recursos humanos." }}
         />
         <div className="clients">
           {window.ClientsData.map((c, i) => (
-            <div className="client" key={i}>
+            <div className={"client" + (c.size === "sm" ? " client--sm" : "")} key={i}>
               <img src={c.logo} alt="" loading="lazy" decoding="async" />
               <span className="client__name">{c.name}</span>
             </div>
@@ -479,7 +484,7 @@ function Software() {
   return (
     <section className="section">
       <div className="wrap">
-        <SectionHead kicker="07 — Herramientas" title="Software que uso" em="a diario." />
+        <SectionHead kicker="08 — Stack" title="Herramientas y métodos" em="que uso a diario." />
         <div className="software">
           {window.SoftwareData.map((s, i) => (
             <div className="tool" key={i}>
@@ -498,12 +503,12 @@ function Certs() {
   return (
     <section className="section">
       <div className="wrap">
-        <SectionHead kicker="08 — Formación" title="Certificaciones" em="y estudios." />
+        <SectionHead kicker="09 — Formación" title="Certificaciones" em="y estudios." />
         <div className="certs">
           {window.CertsData.map((c, i) => (
             <div className="cert" key={i}>
               <div className="cert__top">
-                <div className="cert__logo"><img src={c.logo} alt="" loading="lazy" decoding="async" /></div>
+                <div className="cert__logo"><img src={c.logo} alt="" loading="lazy" decoding="async" style={c.zoom ? { transform: `scale(${c.zoom})` } : undefined} /></div>
                 <div className="cert__year">{c.year}</div>
               </div>
               <div>
@@ -512,6 +517,98 @@ function Certs() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ===== USER REVIEWS (franja home: capturas reales) ===== */
+function UserReviews({ showLink = true }) {
+  const caps = window.AppReviewsData.captures;
+  const [lb, setLb] = React.useState(null);
+  const lbRef = useLightboxA11y(lb !== null, () => setLb(null));
+
+  React.useEffect(() => {
+    if (lb === null) return;
+    const onKey = (e) => {
+      if (e.key === "ArrowLeft" && lb > 0) setLb(lb - 1);
+      if (e.key === "ArrowRight" && lb < caps.length - 1) setLb(lb + 1);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [lb, caps.length]);
+
+  return (
+    <section className="section section--tight">
+      <div className="wrap">
+        <div className="ureviews">
+          <div className="ureviews__head">
+            <div className="mono">Reseñas de usuarios · Tiendas de apps</div>
+            <div className="ureviews__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          </div>
+          <div className="rev-caps">
+            {caps.map((c, i) => (
+              <button className="rev-cap" key={i} onClick={() => setLb(i)} type="button" aria-label={`Ampliar captura de reseñas ${i + 1} de ${caps.length}`}>
+                <img src={c.img} alt={`Captura de reseñas de usuarios ${i + 1} de ${caps.length}`} loading="lazy" decoding="async" />
+                <span className="rev-cap__cta" aria-hidden="true">⤢</span>
+              </button>
+            ))}
+          </div>
+          {showLink && (
+            <a className="ureviews__link" href="recomendaciones.html">Ver todas las reseñas y recomendaciones <span aria-hidden="true">↗</span></a>
+          )}
+        </div>
+      </div>
+
+      {lb !== null && caps[lb] && ReactDOM.createPortal(
+        <div className="lightbox" ref={lbRef} role="dialog" aria-modal="true" aria-label={`Captura de reseñas ${lb + 1} de ${caps.length}`} onClick={() => setLb(null)}>
+          <button className="lightbox__close" onClick={() => setLb(null)} aria-label="Cerrar vista ampliada">×</button>
+          {lb > 0 && (
+            <button className="lightbox__nav lightbox__nav--prev" onClick={(e) => { e.stopPropagation(); setLb(lb - 1); }} aria-label="Captura anterior">←</button>
+          )}
+          {lb < caps.length - 1 && (
+            <button className="lightbox__nav lightbox__nav--next" onClick={(e) => { e.stopPropagation(); setLb(lb + 1); }} aria-label="Captura siguiente">→</button>
+          )}
+          <figure className="lightbox__figure" onClick={(e) => e.stopPropagation()}>
+            <img src={caps[lb].img} alt={`Captura de reseñas de usuarios ${lb + 1} de ${caps.length}`} />
+            <figcaption className="lightbox__cap">
+              <div className="lightbox__tag">Reseñas de usuarios</div>
+              <h3>Captura {lb + 1} de {caps.length} — Tienda de apps</h3>
+            </figcaption>
+          </figure>
+        </div>,
+        document.body
+      )}
+    </section>
+  );
+}
+
+/* ===== PROCESS ===== */
+function Process() {
+  const d = window.ProcessData;
+  return (
+    <section className="section">
+      <div className="wrap">
+        <SectionHead
+          kicker="05 — Proceso"
+          title="Cómo trabajo,"
+          em="paso a paso."
+          noline
+          aside={{ label: "Método", text: "Del brief a un producto medible, en cinco pasos." }}
+        />
+        <div className="process">
+          {d.steps.map((s, i) => (
+            <div className="pstep" key={i}>
+              <div className="pstep__num">{s.num} / 0{d.steps.length}</div>
+              <div className="pstep__title">{s.title}</div>
+              <p className="pstep__desc">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+        <div className="process__note">
+          <span className="process__note__label">Nota</span>
+          <p>{d.note}</p>
         </div>
       </div>
     </section>
@@ -556,7 +653,7 @@ function PortfolioPage() {
       <div className="wrap">
         <div className="mono">Portafolio · {items.length} proyectos</div>
         <h1>Proyectos <em>que cuentan una historia.</em></h1>
-        <p>Una selección completa de proyectos de UX/UI, diseño web y branding realizados 2019 y 2025.</p>
+        <p>Una selección completa de proyectos de UX/UI, diseño web y branding realizados entre 2020 y 2025.</p>
         <div className="filters">
           {categories.map(c => (
             <button key={c} className={"filter " + (filter === c ? "is-active" : "")} onClick={() => setFilter(c)}>
@@ -622,9 +719,9 @@ function RecomendacionesPage() {
   return (
     <section className="section recs-hero">
       <div className="wrap">
-        <div className="mono">Recomendaciones · {window.TestimonialsData.length} testimonios</div>
+        <div className="mono">Recomendaciones · {window.TestimonialsData.length} testimonios · 10 reseñas de usuarios</div>
         <h1>Lo que dicen <em>los equipos.</em></h1>
-        <p>Qué opinan mis stakeholders después de colaborar conmigo.</p>
+        <p>Qué opinan mis stakeholders y los usuarios finales de los productos que diseño.</p>
 
         <div className="mono" style={{ marginTop: 40 }}>Destacados</div>
         <div className="featured-recs">
@@ -656,6 +753,7 @@ function RecomendacionesPage() {
             </div>
           ))}
         </div>
+
       </div>
 
       {lightbox !== null && recs[lightbox] && ReactDOM.createPortal(
@@ -693,7 +791,7 @@ function ContactoPage() {
             <div className="contact-card__block">
               <h4>WhatsApp y teléfono</h4>
               <div className="val"><a href={window.SiteMeta.whatsapp} target="_blank" rel="noopener noreferrer">{window.SiteMeta.phone}</a></div>
-              <p>Respondo en menos de 24 horas hábiles. Disponible para colaboraciones remotas.</p>
+              <p>Respondo en menos de 24 horas hábiles. Disponible para freelance y vacantes de tiempo completo 100% home office.</p>
             </div>
             <div className="contact-card__block">
               <h4>Correo electrónico</h4>
@@ -721,6 +819,24 @@ function Page({ which }) {
   const forcedLight = which === "portafolio";
   const [theme, setTheme] = useState("light");
   const [tweaksOpen, setTweaksOpen] = useState(false);
+
+  useEffect(() => {
+    // Ocultar preloader cuando React monta, respetando un tiempo mínimo visible
+    // (evita el parpadeo en cargas muy rápidas). __plStart lo fija el HTML;
+    // __plMin permite ajustar el mínimo (500ms por defecto).
+    const p = document.getElementById("preloader");
+    if (!p || p.classList.contains("is-done")) return;
+    const min = window.__plMin || 500;
+    const start = window.__plStart || Date.now();
+    const wait = Math.max(0, min - (Date.now() - start));
+    const t = setTimeout(() => {
+      p.classList.add("is-done");
+      const remove = () => { if (p.parentNode) p.parentNode.removeChild(p); };
+      p.addEventListener("transitionend", remove, { once: true });
+      setTimeout(remove, 700); // fallback si transitionend no dispara (reduced motion)
+    }, wait);
+    return () => clearTimeout(t);
+  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", forcedLight ? "light" : theme);
@@ -784,14 +900,21 @@ function Page({ which }) {
             <FeaturedWork />
             <About />
             <Skills />
+            <Process />
             <Behance />
+            <UserReviews />
             <Clients />
             <Software />
             <Certs />
           </>
         )}
         {which === "portafolio" && <PortfolioPage />}
-        {which === "recomendaciones" && <RecomendacionesPage />}
+        {which === "recomendaciones" && (
+          <>
+            <RecomendacionesPage />
+            <UserReviews showLink={false} />
+          </>
+        )}
         {which === "contacto" && <ContactoPage />}
         {which !== "contacto" && <ContactStrip />}
       </main>

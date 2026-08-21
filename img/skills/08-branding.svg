@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marca en mesa de trabajo con paleta y bezier"><rect width="400" height="300" fill="#efece6"/>
+<rect x="56" y="52" width="196" height="168" rx="14" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<path d="M48 44 v14 M48 44 h14 M260 44 v14 M260 44 h-14 M48 228 v-14 M48 228 h14 M260 228 v-14 M260 228 h-14" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"/>
+<circle cx="134" cy="122" r="38" fill="#3B82F6"/>
+<path d="M134 96 l40 52 h-80 z" fill="#0a0a0a" opacity="0.9"/>
+<circle cx="176" cy="98" r="14" fill="none" stroke="#0a0a0a" stroke-width="2.5"/>
+<rect x="96" y="178" width="76" height="8" rx="4" fill="#0a0a0a" opacity="0.18"/>
+<rect x="228" y="130" width="132" height="110" rx="14" fill="#0a0a0a"/>
+<rect x="220" y="122" width="132" height="110" rx="14" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="236" y="138" width="24" height="24" rx="6" fill="#3B82F6"/>
+<rect x="266" y="138" width="24" height="24" rx="6" fill="#0a0a0a"/>
+<rect x="296" y="138" width="24" height="24" rx="6" fill="#0a0a0a" opacity="0.25"/>
+<rect x="326" y="138" width="24" height="24" rx="6" fill="#efece6" stroke="#0a0a0a" stroke-width="2"/>
+<path d="M238 210 c 24 -32 60 -32 96 -6" fill="none" stroke="#0a0a0a" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="262" y1="186" x2="286" y2="178" stroke="#3B82F6" stroke-width="2"/>
+<circle cx="262" cy="186" r="3.5" fill="#3B82F6"/>
+<circle cx="286" cy="178" r="3.5" fill="#3B82F6"/>
+<rect x="234" y="206" width="9" height="9" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="270" y="177" width="9" height="9" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="329" y="199" width="9" height="9" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<path d="M330 64 h14 M337 57 v14" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"/>
+</svg>

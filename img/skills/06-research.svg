@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Journey de usuario bajo la lupa"><rect width="400" height="300" fill="#efece6"/>
+<rect x="48" y="46" width="222" height="172" rx="14" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="66" y="64" width="84" height="10" rx="5" fill="#0a0a0a"/>
+<path d="M66 190 h188" stroke="#0a0a0a" stroke-width="2" opacity="0.18"/>
+<path d="M66 160 l38 -34 l40 20 l44 -44 l48 22" fill="none" stroke="#0a0a0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="104" cy="126" r="6" fill="#ffffff" stroke="#0a0a0a" stroke-width="2.5"/>
+<circle cx="144" cy="146" r="6" fill="#ffffff" stroke="#0a0a0a" stroke-width="2.5"/>
+<circle cx="188" cy="102" r="7" fill="#3B82F6"/>
+<circle cx="236" cy="124" r="6" fill="#ffffff" stroke="#0a0a0a" stroke-width="2.5"/>
+<circle cx="188" cy="102" r="26" fill="none" stroke="#0a0a0a" stroke-width="2.5"/>
+<path d="M207 121 l20 20" stroke="#0a0a0a" stroke-width="5" stroke-linecap="round"/>
+<rect x="228" y="140" width="132" height="106" rx="14" fill="#0a0a0a"/>
+<rect x="220" y="132" width="132" height="106" rx="14" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<circle cx="244" cy="158" r="12" fill="none" stroke="#0a0a0a" stroke-width="2"/>
+<circle cx="244" cy="154" r="4" fill="#0a0a0a"/>
+<path d="M236 164 a8 8 0 0 1 16 0" fill="#0a0a0a"/>
+<rect x="264" y="150" width="66" height="8" rx="4" fill="#0a0a0a"/>
+<rect x="264" y="164" width="44" height="6" rx="3" fill="#0a0a0a" opacity="0.18"/>
+<rect x="236" y="188" width="12" height="12" rx="3" fill="none" stroke="#3B82F6" stroke-width="2"/>
+<path d="M238 194 l3 3 l6 -6" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="258" y="190" width="70" height="7" rx="3.5" fill="#0a0a0a" opacity="0.18"/>
+<rect x="236" y="210" width="12" height="12" rx="3" fill="none" stroke="#3B82F6" stroke-width="2"/>
+<path d="M238 216 l3 3 l6 -6" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="258" y="212" width="54" height="7" rx="3.5" fill="#0a0a0a" opacity="0.18"/>
+<path d="M330 60 h14 M337 53 v14" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"/>
+</svg>

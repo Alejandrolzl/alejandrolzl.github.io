@@ -19,7 +19,7 @@ window.HomeData = {
     titleA: "Transformo",
     titleB: "datos complejos",
     titleC: "en experiencias memorables.",
-    lead: "Product Designer con +5 años de experiencia. Colaboro estrechamente con equipos de negocio y tecnología para reducir tiempos de desarrollo en un 40%. Diseño soluciones escalables que han elevado la retención un 15% y la satisfacción al 92%.",
+    lead: "Diseñador UX/UI & Product Designer con 6 años de experiencia. Colaboro con equipos de Producto, Negocio, Tech, Growth y Marca para diseñar soluciones escalables que mejoran un 15% la retención y alcanzan un 92% de satisfacción. Desde 2024, integro IA para potenciar todo mi ciclo de diseño end-to-end, permitiéndome iterar en tiempo récord, optimizar entregas, acelerar el time to market y reducir un 40% los tiempos de desarrollo.",
     availability: "Disponible",
     portrait: `${IMG}/portfolio/Selfie.jpg`,
   },
@@ -27,18 +27,21 @@ window.HomeData = {
     { n: "15M+", label: "Usuarios impactados" },
     { n: "30+",  label: "Productos diseñados" },
     { n: "10+",  label: "Design systems aplicados" },
-    { n: "5 años", label: "De experiencia" },
+    { n: "6 años", label: "De experiencia" },
   ],
   about: {
-    quote: "Transformo datos complejos en experiencias digitales excepcionales.",
-    p: "Colaboro con producto, ingeniería y marketing para convertir problemas ambiguos en interfaces escalables. Me obsesiona el handoff limpio, la accesibilidad y los design systems que no se rompen a la tercera iteración.",
-    cover: `/img/proyects/AppEvergo.jpg`,
+    p: "Diseñar productos digitales en constante evolución me enseñó que la claridad es el activo más valioso. Convierto requerimientos complejos en interfaces intuitivas y escalables, gestionando todo el ciclo end-to-end: desde la accesibilidad WCAG y la gobernanza de archivos, hasta la estructura que permite a equipos multidisciplinarios construir y escalar sin tropezar. Diseño sistemas robustos pensados para adaptarse y crecer.",
+    cover: `${IMG}/proyects/AppEvergo.jpg`,
   },
   skills: [
-    { num: "01", title: "UX/UI Design",     desc: "Investigación, wireframes, prototipos y pruebas de usabilidad. De la hipótesis al pixel final.", img: `${IMG}/portfolio/UI-skill.jpg` },
-    { num: "02", title: "Diseño Web",       desc: "Sitios modernos, funcionales y responsivos. Claridad sobre decoración, usabilidad primero.",       img: `${IMG}/portfolio/DisenoWeb-skill.jpg` },
-    { num: "03", title: "Diseño Gráfico",   desc: "Identidad, banners, piezas sociales y activos de UI. Coherencia visual con el producto.",           img: `${IMG}/portfolio/DisenoGrafico-skill.jpg` },
-    { num: "04", title: "Maquetado Web",    desc: "HTML, CSS, JavaScript, Tailwind y Bootstrap. Pixel-perfect, responsivo, listo para producción.",    img: `${IMG}/portfolio/MaquetadoWeb-skill.jpg` },
+    { num: "01", title: "UX/UI Design",                 desc: "Apps móviles, plataformas web y productos complejos: investigación, arquitectura de información, wireframes, UI de alta fidelidad y pruebas de usabilidad. De la hipótesis al pixel final.", img: "img/skills/01-uxui.svg" },
+    { num: "02", title: "Product Design",               desc: "Producto end-to-end: flujos críticos, métricas y roadmap en colaboración con negocio y tecnología.",                img: "img/skills/02-product.svg" },
+    { num: "03", title: "Design Systems",               desc: "Atomic Design, tokens semánticos, accesibilidad WCAG, librerías y componentes que escalan producto.",               img: "img/skills/03-systems.svg" },
+    { num: "04", title: "Governance de diseño",         desc: "Estructura y nomenclatura de archivos, organización de librerías y procesos que ordenan el trabajo de equipos completos: de cientos de archivos heredados a un modelo claro.", img: "img/skills/04-governance.svg" },
+    { num: "05", title: "Diseño asistido por IA",       desc: "Integro IA en todo mi ciclo end-to-end — research, benchmark, wireframes, UI, prototipos, auditorías y handoff — y llevo el flujo a los equipos para iterar en tiempo récord.", img: "img/skills/05-ia.svg" },
+    { num: "06", title: "UX Research",                  desc: "Entrevistas, benchmark competitivo, journey mapping y A/B testing para decidir con evidencia.",                     img: "img/skills/06-research.svg" },
+    { num: "07", title: "Diseño y Maquetado Web",       desc: "De landing pages a e-commerce y plataformas web empresariales robustas: diseño y maquetado con HTML, CSS, JavaScript y Tailwind, pixel-perfect y listo para producción.", img: "img/skills/07-web.svg" },
+    { num: "08", title: "Diseño Gráfico & Branding",    desc: "Identidad, banners, piezas sociales y activos de UI. Coherencia visual con el producto.",                           img: "img/skills/08-branding.svg" },
   ],
   // Featured projects on home — bento 2x3 sin huecos
   featured: [
@@ -104,6 +107,7 @@ window.BehanceData = {
 };
 
 window.ClientsData = [
+  { name: "Finsus",            logo: "img/partners/Finsus.svg", size: "sm" },
   { name: "Evergo",            logo: `${IMG}/partners/Evergo%20logo.png` },
   { name: "Data Intelligence", logo: `${IMG}/partners/Logo%20Data%20Intelligence.png` },
   { name: "NT",                logo: `${IMG}/partners/NTLogo.png` },
@@ -112,24 +116,47 @@ window.ClientsData = [
   { name: "CDMX",              logo: `${IMG}/partners/CDMX%20Logo.png` },
   { name: "ESFRE",             logo: `${IMG}/partners/ESFRE%20Logo.png` },
   { name: "IPN",               logo: `${IMG}/partners/IPN%20Logo.png` },
+  { name: "IPEF",              logo: "img/partners/IPEF.png", size: "sm" },
   { name: "IGNI",              logo: `${IMG}/partners/Logo%20IGNI.png` },
   { name: "Trabajobs",         logo: `${IMG}/partners/Loso%20Trabajobs.png` },
 ];
 
 window.SoftwareData = [
-  { num: "01", name: "Diseño y prototipado", list: "Figma · FigJam · Miro · Maze · Photoshop · Illustrator · Canva · Zeplin · Framer · Typeform" },
-  { num: "02", name: "Maquetado Web",        list: "HTML · CSS · JavaScript · jQuery · Tailwind · Bootstrap · Astro" },
-  { num: "03", name: "CMS",                  list: "WordPress (Divi · Elementor · Woo) · Shopify · Mailchimp" },
-  { num: "04", name: "Colaboración",         list: "Jira · Trello · Confluence · Slack · Azure Boards · Notion" },
-  { num: "05", name: "Analítica",            list: "Google Analytics · Hotjar" },
-  { num: "06", name: "Inteligencia Artificial", list: "Claude · Claude Code · Claude Design · ChatGPT · Gemini" },
+  { num: "01", name: "Diseño asistido por IA",        list: "Claude · Claude Code · Claude Design · ChatGPT · Gemini — IA en todo el ciclo: research y benchmark, componentes y pantallas de código a Figma, wireframes y prototipos de alta fidelidad, auditorías UX y handoff acelerado" },
+  { num: "02", name: "Diseño y prototipado",          list: "Figma · FigJam · Miro · Photoshop · Illustrator · Canva · Zeplin · Framer" },
+  { num: "03", name: "Design Systems",                list: "Atomic Design · Tokens semánticos · Accesibilidad WCAG · Librerías y documentación" },
+  { num: "04", name: "Maquetado y CMS",               list: "HTML · CSS · JavaScript · jQuery · Tailwind · Bootstrap · Astro · WordPress · Shopify" },
+  { num: "05", name: "Colaboración y gestión",        list: "Governance y nomenclatura de Figma · Jira · Confluence · Slack · Azure Boards · Notion · Trello · Mailchimp" },
+  { num: "06", name: "Research y analítica",          list: "Google Analytics · Hotjar · Maze · Typeform · Pruebas de usabilidad moderadas · A/B testing" },
 ];
 
+window.ProcessData = {
+  note: "Este es mi proceso base: si tu equipo ya trabaja con una metodología propia, me integro a ella sin fricción.",
+  steps: [
+    { num: "01", title: "Descubrimiento",       desc: "Research, benchmark competitivo, entrevistas y objetivos de negocio sobre la mesa." },
+    { num: "02", title: "Definición",           desc: "Arquitectura de información, flujos y prioridades definidas junto a producto y tecnología." },
+    { num: "03", title: "Diseño y prototipado", desc: "De wireframes a prototipos interactivos de alta fidelidad, acelerado con IA y generación de código a Figma." },
+    { num: "04", title: "Validación",           desc: "Pruebas de usabilidad, A/B testing y ajustes con evidencia, no con opiniones." },
+    { num: "05", title: "Entrega y evolución",  desc: "Handoff limpio, documentación y librerías que mantienen el producto vivo." },
+  ],
+};
+
 window.CertsData = [
+  { org: "IPN — ESIME Culhuacán", title: "Ingeniería en Computación", year: "2018 — 2022", logo: `${IMG}/partners/IPN%20Logo.png`, zoom: 1.6 },
   { org: "Google", title: "Diseño de experiencia del usuario", year: "2023", logo: `${IMG}/portfolio/new-google-logo.jpg` },
   { org: "Udemy",  title: "Diseño UX",                          year: "2022", logo: `${IMG}/portfolio/Udemy.png` },
   { org: "EBAC",   title: "Diseño UI",                          year: "2022", logo: `${IMG}/portfolio/ebaclogo.jpeg` },
 ];
+
+// Reseñas reales de usuarios en tiendas de apps (producto sin identificar a propósito)
+window.AppReviewsData = {
+  captures: [
+    { img: "img/reviews/resena-1.png" },
+    { img: "img/reviews/resena-2.png" },
+    { img: "img/reviews/resena-3.png" },
+    { img: "img/reviews/resena-4.png" },
+  ],
+};
 
 // Featured recommendations (LinkedIn-style with photos from the site)
 window.FeaturedRecs = [
